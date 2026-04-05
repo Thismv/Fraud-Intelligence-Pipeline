@@ -10,7 +10,7 @@ The project was completed in collaboration with a major Canadian financial insti
 
 ## At a glance
 
-![ScamWatch overview: the problem, what we built, and the output](scamwatch_pipeline_overview_v3.svg)
+![ScamWatch overview: the problem, what we built, and the output](overview.svg)
 
 - **The problem:** Emerging fraud shows up across many sites; teams need **timely discovery** plus **confidence the source is credible**, not a pile of unvetted links.
 - **What we did:** **Vertex AI (Gemini)** on GCP runs **six agents in sequence**—find trends, gather articles from media and regulators, validate sources, enrich fields, then classify (**Regulatory / Emerging / Scam**).

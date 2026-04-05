@@ -10,13 +10,7 @@ The project was completed in collaboration with a major Canadian financial insti
 
 ## At a glance
 
-```mermaid
-flowchart LR
-  P["The problem<br/>Fraud changes fast. Analysts need early signals from public sources—regulators and serious news—but the web is noisy and not everything is trustworthy."]
-  D["What we did<br/>We built ScamWatch on Google Cloud: a chain of AI agents that hunt for relevant stories, score the publisher, pull out structured facts, and classify each item."]
-  R["The result<br/>A deduplicated spreadsheet each run: vetted articles with summaries, bank relevance, and risk labels analysts can use without starting from scratch."]
-  P --> D --> R
-```
+![ScamWatch overview: the problem, what we built, and the output](scamwatch_pipeline_overview_v3.svg)
 
 - **The problem:** Emerging fraud shows up across many sites; teams need **timely discovery** plus **confidence the source is credible**, not a pile of unvetted links.
 - **What we did:** **Vertex AI (Gemini)** on GCP runs **six agents in sequence**—find trends, gather articles from media and regulators, validate sources, enrich fields, then classify (**Regulatory / Emerging / Scam**).
